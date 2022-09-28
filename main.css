@@ -1,0 +1,141 @@
+body {
+    margin: 0%;
+  }
+#b1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    height: 1300px;
+    border: 1px solid black;
+}
+#a{
+    width: 1370px;
+    height: 100px;
+    border: 1px solid red;
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    
+}
+#b{
+    width: 1370px;
+    height: 200px;
+    border: 1px solid red;
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(78, 76, 76);
+    
+}
+#c{
+    width:1370px;
+    height: 50px;
+    border: 1px solid red;
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(85, 83, 83);
+    
+}
+
+#d{
+    width: 1370px;
+    height: 200px;
+    border: 1px solid red;
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+    
+}
+#e{
+    width:1370px;
+    height: 100px;
+    border: 1px solid red;
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+    
+}
+#f{
+    width: 1370px;
+    height: 150px;
+    border: 1px solid red;
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(85, 83, 83);
+    
+}
+#g{
+    width:1370px;
+    height: 80px;
+    border: 1px solid red;
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(85, 83, 83);
+    
+}
+#h,#i,#j{
+    width: 1370px;
+    height: 130px;
+    border: 1px solid red;
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(85, 83, 83);
+    
+}
+.fourteen {
+    display: grid;
+    margin: 100px auto 0px auto;
+    width: 1610px;
+    height: 500px;
+    grid-template-columns: repeat(11, 1fr);
+
+    gap: 5px 50px;
+
+}
+
+.fourteen>div {
+    display: flex;
+}
+
+.fourteen>div>img {
+    width: 750px;
+    height: 400px;
+}
+
+.m1 {
+    grid-area: 1/1/8/6;
+
+}
+
+
+.m2 {
+    grid-area: 1/6/8/12;
+}
+
+.m3 {
+    grid-area: 8/1/11/6;
+}
+
+.m4 {
+    grid-area: 8/6/11/12;
+}
+
+.m5 {
+    grid-area: 11/1/12/6;
+}
