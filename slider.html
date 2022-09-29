@@ -1,0 +1,260 @@
+<html>
+
+<head>
+
+</head>
+<style>
+        * {
+        box-sizing: border-box
+    }
+    /* Slideshow container */
+    
+    .slideshow-container {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        margin: auto;
+        /* <--- set to zero, 1em = the inherited font size, which will offset it */
+        /* <--- set to zero, 1em = the inherited font size, which will offset it */
+    }
+    /* Hide the images by default */
+    
+    .mySlides {
+        display: none;
+    }
+    /* Next & previous buttons */
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        margin-top: -22px;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    /* Position the "next button" to the right */
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    /* On hover, add a black background color with a little bit see-through */
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    /* Caption text */
+    /* Number text (1/3 etc) */
+    /* The dots/bullets/indicators */
+    
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+    /* Fading animation */
+    
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+
+    #Button_Container{
+     margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    }
+    #Button_Container>img{
+        margin-left: 1%;
+    }
+    #Button_Container>img:hover{
+        border: gray solid;
+        border-width: 1px;
+        border-radius: 10%;
+    }
+    
+    #image_Container{
+  margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    }
+    #image_Container>img{
+        margin-left: 1%;
+        width: 19%;
+        height: 19%;
+        border: gray solid;
+        border-width: 1px;
+    }
+
+    #image_Container>img:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #popular_brand
+    {
+        margin-top: 1%;
+    display: flex;
+    justify-content: center;
+
+    }
+    #popular_brand>img{
+        margin-left: 1%;
+        width: 19%;
+        height: 19%;
+        border: gray solid;
+        border-width: 1px;
+    }
+    #popular_brand>img:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #Top_Offers{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    }
+    #Top_Offers>img{
+        margin-left: 1%;
+        width: 19%;
+        height: 19%;
+        border: gray solid;
+        border-width: 1px;
+    }
+    #Top_Offers>img:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+</style>
+
+<body>
+    <div id="navbar">
+
+    </div>
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/YXHP144_hp_fom_m_bbpl-staples_460_270922_Bangalore.jpg" style="width:100%; height:100% ;">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/fresho-fnv-Bangalore-1600x460-27thSEP22.jpeg" style="width:100%; height:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/HP_EMF_M_WeekdayBangalore_DC1-1600x460_220927.jpeg" style="width:100%; height:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_Dry_FishBanner_1600x460_070922.jpg" style="width:100%; height:100%">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_premium-tender-coconut_1600x460px-030922.jpg" style="width:100%; height:100%">
+
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+   <div id="Button_Container">
+<img onclick="window.location.href = 'eggmeatfish.html';" src="https://www.bigbasket.com/media/uploads/banner_images/hp_eggs-topstrip_m_250922_01.png" />
+<img src="https://www.bigbasket.com/media/uploads/banner_images/hp_neupass-topstrip_m_250922_02.png" />
+<img src="https://www.bigbasket.com/media/uploads/banner_images/hp_ayurveda-topstrip_m_250922_03.png" />
+<img src="https://www.bigbasket.com/media/uploads/banner_images/hp_buy-more-save-more-topstrip_m_250922_04.png" />
+<img src="https://www.bigbasket.com/media/uploads/banner_images/hp_dow-topstrip_m_250922_05.png" />
+<img src="https://www.bigbasket.com/media/uploads/banner_images/hp_combo-storetopstrip_m_250922_06.png" />
+ 
+
+
+   </div>
+<h2 style="margin-top: 2.8%; text-align: center; color: gray;">
+    Bank Offers
+</h2>
+<hr style="margin-right: 10% ; margin-left: 10% ; text-align: center;margin-top: -1%;">
+<div id="image_Container">
+    <img  src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/325a886d-f7ba-4f20-a692-f41d8f8311b2/t1_hp_aff_m_paytm_360_260922.jpg" />
+    <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/325a886d-f7ba-4f20-a692-f41d8f8311b2/t1_hp_aff_m_kotak_360_280922.jpg" />
+    <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/325a886d-f7ba-4f20-a692-f41d8f8311b2/t1_hp_aff_m_rbl_360_260922.jpg" />
+    <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/325a886d-f7ba-4f20-a692-f41d8f8311b2/t1_hp_m_aff_dbs_360_260922.jpg" />
+
+     
+    
+    
+       </div>
+
+       <div id="items" style="display: flex;justify-content: center;">
+
+        <img style="margin-top: 1%;margin-left: 2%;" src="https://i.ibb.co/ZzZXZ7v/Screenshot-from-2022-09-28-23-02-31.png"/>
+
+       </div>
+
+       <h2 style="margin-top: 4%; text-align: center; color: gray;">Most Popular</h2>
+       <hr style="margin-right: 10% ; margin-left: 10% ; text-align: center;margin-top: -1%;">
+
+       <div id="popular_brand">
+        <img  src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/9f16f7a4-73e4-425e-9fe0-cf222d1ff46b/hp_supplements-stro-mostpopularStorefront_m_480_250922_01.jpg" />
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/9f16f7a4-73e4-425e-9fe0-cf222d1ff46b/hp_ayurveda-mostpopularStorefront_m_480_250922_02.jpg" />
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/9f16f7a4-73e4-425e-9fe0-cf222d1ff46b/hp_festive-prep-mostpopularStorefront_m_480_250922_03.jpg" />
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/9f16f7a4-73e4-425e-9fe0-cf222d1ff46b/hp_early-wintermostpopularStorefront_m_480_250922_04.jpg" /> 
+       </div>
+
+       <h2 style="margin-top: 2.8%; text-align: center; color: gray;">Top Offers</h2>
+       <hr style="margin-right: 10% ; margin-left: 10% ; text-align: center;margin-top: -1%;">
+
+       <div id="Top_Offers">
+        <img  src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/d262e735-39ad-407f-99c9-69c0a1f5b3df/hp_deal-of-the-week-topoffersStorefront_m_480_250922_01.jpg" />
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/d262e735-39ad-407f-99c9-69c0a1f5b3df/hp_big-pack-topoffersStorefront_m_480_250922_02.jpg" />
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/d262e735-39ad-407f-99c9-69c0a1f5b3df/hp_combos-topoffersStorefront_m_480_250922_03.jpg" />
+        <img src="https://www.bigbasket.com/media/customPage/b01eee88-e6bc-410e-993c-dedd012cf04b/c8c0b982-8bbf-434f-aeac-cc9c07a7029a/d262e735-39ad-407f-99c9-69c0a1f5b3df/hp_the-30-cor-topoffersStorefront_m_480_250922_04.jpg" /> 
+
+       </div>
+</body>
+
+</html>
+
+<script src="slider.js">
+
+</script>
