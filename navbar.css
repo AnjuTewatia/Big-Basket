@@ -1,0 +1,145 @@
+#nav {
+   
+    width: 85%;
+    height: 150px;
+   margin: 0px auto 0px auto;
+ 
+   
+
+}
+#navt{
+    
+    width: 100%;
+    height: 40px;
+    display: flex;
+   margin: 0px auto 2px auto;
+
+}
+#navt>div h6{
+   
+    margin: auto auto auto auto;
+}
+#navm{
+    width: 100%;
+    height: 50px;
+    display: flex;
+   margin: 0px auto 2px auto;
+}
+
+#navb{
+    width: 100%;
+    height: 50px;
+    display: flex;
+   margin: 0px auto 0px auto;
+   border: 1px solid rgb(199, 196, 196);
+   text-align: center;
+  
+}
+#navb>div h6{
+   
+    margin: auto auto auto 0px;
+}
+#t1{
+    position: absolute;
+    left: 790px;
+    width: 10%;
+    height: 25px;
+    color: rgb(97, 96, 96);
+    text-align: center;
+}
+#t2{
+    position: absolute;
+    left: 1000px;
+    width: 10%;
+    height: 25px;
+    color: rgb(97, 96, 96);
+    text-align: center;
+   
+}
+
+
+#t3{
+    position: absolute;
+    left: 1185px;
+    width: 15%;
+    height: 25px;
+    color: rgb(97, 96, 96);
+}
+#t4{
+    position: absolute;
+    left: 1250px;
+    width: 10%;
+    height: 25px;
+    color: rgb(97, 96, 96);
+  
+}
+#t3 p{
+    
+    margin: 0px auto 30px auto;
+    color: black;
+}
+#t4 p{
+    
+    margin: 0px auto 30px auto;
+    color: black;
+}
+
+
+#m1{
+    position: absolute;
+    left: 100px;
+    width: 15%;
+    height: 45px;
+  
+}
+#m2{
+    position: absolute;
+    left: 400px;
+    width: 40%;
+    height: 40px;
+    border: 1px solid rgb(199, 196, 196);
+   
+}
+#m3{
+    position: absolute;
+    left:1100px;
+    width: 18%;
+    height: 45px;
+  background-color: rgb(195, 195, 195);
+    text-align: center;
+}
+#m3>img{
+    width: 30%;
+    height: 100%;
+}
+
+#b1{
+    position: absolute;
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    left: 120px;
+    width: 20%;
+    height: 50px;
+   
+}
+#navb>div{
+    display: table-cell;
+    vertical-align: middle;
+}
+#m1>img{
+    width: 90%;
+    height: 150%;
+}
+#b2{
+    position: absolute;
+    color: brown;
+    left: 320px;
+    width: 20%;
+    height: 50px;
+  
+    
+}
+
+
+
