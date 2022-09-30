@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>login</title>
+    <style>
+     
+
+
+    </style>
+
+</head>
+<style>
+   *{
+        font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    }
+
+    .flex{
+  display:flex;
+}
+html {
+  height: 200px;
+  width: 80%;
+  margin: 200px auto auto auto;
+ 
+  font-family: 'Roboto', sans-serif;
+ 
+}
+body {
+    font-family: WhitneySSm,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #424553;
+    background-color:white;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+
+
+
+.container{ 
+  /* padding: 0 10vw;  */
+  width:100%;
+}
+
+.containerHeader{ 
+  /* padding: 0 10vw;  */
+  width:100%;
+}
+
+nav{
+  font-size: 15px;
+  padding-top: 14px;
+}
+
+nav ul li{
+  list-style: none;
+  padding: 0 12px;
+}
+
+.items-center{
+  align-items:center;
+} 
+
+.justify-center{
+  justify-content: center;
+}
+
+.space-between{
+  justify-content: space-between;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.semibold{
+  font-weight: bolder;
+}
+
+.mx-2{
+   margin-left: 12px;
+  margin-right: 12px;
+  font-weight: bolder; 
+} 
+
+ .my-2{
+  margin: 12px 0;
+ 
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+ 
+}
+
+
+
+    #form{
+        height: 500px;
+        width: 41%;
+        margin: auto;
+        /* border: 1px solid red; */
+        /* margin-top: 8%; */
+        justify-content: center;
+        padding: 60px 15px 30px 40px;
+       
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    input{
+        width: 80%;
+        height: 35px;
+        border: 1px solid grey;
+        /* border-radius: 10px; */
+        margin-bottom: 20px;
+        padding-left: 10px;
+       margin-top:10px;
+        
+        
+    }
+    h2{
+      padding-left:15px;
+      text-align: center;
+    }
+    h4{
+        margin-bottom: 8px;
+    }
+   
+   
+    .cont{
+        background-color:rgb(71, 114, 7);
+        color:white;
+        height: 80px;
+        width: 83%;
+        margin:auto;
+        margin-top:20px;
+        margin-bottom: 20px;
+
+    }
+</style>
+
+<body>
+   
+
+
+    
+ <form action="" id="form">
+        <h2>LOGIN/SIGNUP</h2>
+        
+        <input id="mobilenumber" type="text" placeholder="+91 | Mobile number" /><br />
+
+        <input id="password" type="text" placeholder="enter password" /><br />
+
+        
+        
+        <input class="cont"  type="submit" value="CONTINUE">
+
+        <p>By continuing, I accept TCP-bigbasket’s Terms and Conditions and Privacy Policy.</p>
+    </form>
+
+    
+
+
+<script>
+ 
+ let inputData=JSON.parse(localStorage.getItem("inputItem"))
+
+    document.querySelector("#form").addEventListener("submit",myProject)
+
+    function myProject(){
+        let mobilenumber=document.querySelector("#mobilenumber").value
+        let password=document.querySelector("#password").value
+     if(mobilenumber!=inputData.inputMobile && password!=inputData.inputPassword){
+        alert("Mobile Number and password Wrong")
+     }else if(mobilenumber==inputData.inputMobile && password!=inputData.inputPassword){
+        alert("Password is wrong")
+     }else if(mobilenumber!=inputData.inputMobile && password==inputData.inputPassword){
+        alert("Mobile Number is wrong")
+     }else{
+        alert("Login Successfull")
+     }
+     
+    }
+
+
+</script>
+
+</body>
+
+</html>
