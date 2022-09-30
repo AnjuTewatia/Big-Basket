@@ -542,7 +542,7 @@ index1.forEach(function(ele){
     p_title.innerHTML=ele.title;
 
     let p_discription=document.createElement("h5")
-    p_discription.innerHTML=ele.discription;
+    p_discription.innerHTML=ele.Description;
 
     let p_item=document.createElement("p")
     p_item.innerHTML=ele.item;
@@ -637,7 +637,7 @@ index2.forEach(function(ele){
     p_title.innerHTML=ele.title;
 
     let p_discription=document.createElement("h5")
-    p_discription.innerHTML=ele.discription;
+    p_discription.innerHTML=ele.Description;
 
     let p_item=document.createElement("p")
     p_item.innerHTML=ele.item;
@@ -689,6 +689,8 @@ function slidings(){
 
 // *************************************items********************************
 let res =document.getElementById("res")
+// let arr11=JSON.parse(localStorage.getItem("items"))
+let arr11=[]
 
 let item=[
     {
@@ -715,9 +717,10 @@ let item=[
     {
         image:"https://www.bigbasket.com/media/uploads/p/s/40106415_4-fiama-gel-bathing-bar-celebration-pack-with-5-unique-gel-bars.jpg",
         name:"Flama",
-        price:"MRP: Rs 264",
+        price:295,
     },
 ]
+
  item.forEach(function(e){
     let div=document.createElement("div")
     div.setAttribute("class","card")
@@ -731,13 +734,36 @@ let item=[
     let p_price=document.createElement("h5")
     p_price.innerHTML=e.price;
     // console.log("anju")
+    let btn=document.createElement("button")
+    btn.innerText="Add"
+    btn.style.backgroundColor="orange"
+    btn.style.border="none"
+    // btn.style.margin="auto"
 
-    div.append(p_image,p_name,p_price);
+    
+    let obj={
+        image:e.image,
+        name:e.name,
+        price:e.price
+
+    }
+    
+    btn.addEventListener("click",(e) =>{
+        arr11.push(obj);
+       
+        
+        localStorage.setItem("items",JSON.stringify(arr11))
+        alert("Add to cart successfull")
+    })
+
+    div.append(p_image,p_name,p_price,btn);
 
     res.append(div);
     // console.log(div)
 
  })
+
+
 
 
  let iitem=[item]
