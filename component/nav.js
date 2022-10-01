@@ -16,7 +16,17 @@ return`
 <div id="b1">SHOP BY CATEGORIES</div>
 <div id="b2"><a href="./order.html" target="_blank"></a>OFFERS</div>
 </div>
-
 `
+let categories = document.getElementById("b1");
+ categories.addEventListener("click",(e)=>{
+    console.log("hi");
+    return `<li><a href="./bakery.html">Bakery, Cakes & Dairy</a></li>
+    <li><a href="./beauty.html"></a>Beauty & Hygiene</li>
+    <li><a href="./beverages.html"></a>Beverages</li>
+    <li><a href="./foodgrains.html"></a>Food Grains, Oil & Masala</li>
+    <li><a href="./fruits_category.html"></a>Fruits & vegetables</li>
+    <li><a href="./snacks.html"></a>Snacks & Branded Foods</li>
+`
+ });
 }
 export {nav};
