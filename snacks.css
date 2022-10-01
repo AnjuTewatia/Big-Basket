@@ -1,0 +1,73 @@
+#snacks{
+    width: 1000px;
+    margin: auto;
+}
+#snacks_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    text-align: center;
+}
+#snacks_container div{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    border: 1px solid green;
+    border-radius: 10px;
+}
+#snacks_container img{
+    margin: auto;
+    width: 100%;
+}
+#striked_price{
+    margin-bottom: 0;
+    text-decoration: line-through;
+}
+#price{
+    margin-top: 0;
+}
+#snacks_container div button{
+    margin: auto;
+    width: 70px;
+    background-color: rgb(209, 209, 87);
+    padding: 0.5% 2% 0.5% 2%;
+    border: none;
+    border-radius: 3px;
+}
+#below_slider{
+    display: flex;
+    justify-content: space-between;
+}
+#below_slider > p{
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 0.5% 2% 0.5% 2%;
+}
+#below_slider > p:hover{
+    cursor: pointer;
+}
+#refine{
+    text-decoration: underline;
+    display: flex;
+}
+#refine > img{
+    width: 3%;
+}
+#refine > p{
+    font-size: small;
+}
+#snacks_container div button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#more_snacks{
+    margin-left: 50%;
+    width: 110px;
+    background-color: rgb(209, 209, 87);
+    padding: 0 2% 0 2%;
+    border: none;
+    border-radius: 3px;
+}
+#more_snacks:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
