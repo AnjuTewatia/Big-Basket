@@ -13,20 +13,17 @@ return`
 <div id="m3"><img src="data:image/png;base64,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" alt="" srcset="">My Basket</div>
 </div>
 <div id="navb">
-<div id="b1">SHOP BY CATEGORIES</div>
+<select name="SHOP BY CATEGORIES" id="b1">
+<option><a href="./bakery.html">Bakery, Cakes & Dairy</a></option>
+<option><a href="./fruits_category.html">Fruits & Vegetables</a></option>
+<option><a href="./foodgrains.html">Food Grains, Oil & Masala</a></option>
+<option><a href="./snacks.html">Snacks & Branded Foods</a></option>
+<option><a href="./beauty.html">Beauty & Hygiene</a></option>
+<option><a href="./beverages.html">Beverages</a></option>
+</select>
+
 <div id="b2"><a href="./order.html" target="_blank"></a>OFFERS</div>
 </div>
 `
-let categories = document.getElementById("b1");
- categories.addEventListener("click",(e)=>{
-    console.log("hi");
-    return `<li><a href="./bakery.html">Bakery, Cakes & Dairy</a></li>
-    <li><a href="./beauty.html"></a>Beauty & Hygiene</li>
-    <li><a href="./beverages.html"></a>Beverages</li>
-    <li><a href="./foodgrains.html"></a>Food Grains, Oil & Masala</li>
-    <li><a href="./fruits_category.html"></a>Fruits & vegetables</li>
-    <li><a href="./snacks.html"></a>Snacks & Branded Foods</li>
-`
- });
 }
 export {nav};
