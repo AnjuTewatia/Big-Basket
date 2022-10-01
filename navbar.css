@@ -1,8 +1,9 @@
-#nav {
+#n {
    
     width: 85%;
     height: 150px;
    margin: 0px auto 0px auto;
+   cursor: pointer;
  
    
 
@@ -87,7 +88,7 @@
 
 #m1{
     position: absolute;
-    left: 100px;
+    left: 105px;
     width: 15%;
     height: 45px;
   
@@ -98,11 +99,14 @@
     width: 40%;
     height: 40px;
     border: 1px solid rgb(199, 196, 196);
+    margin-left: 40px;
+    
+    
    
 }
 #m3{
     position: absolute;
-    left:1100px;
+    left:1112px;
     width: 18%;
     height: 45px;
   background-color: rgb(195, 195, 195);
@@ -134,12 +138,20 @@
 #b2{
     position: absolute;
     color: brown;
-    left: 320px;
-    width: 20%;
+    left: 430px;
+    width: 15%;
     height: 50px;
+
   
     
 }
+#b2:hover{
+    background-color: green;
 
+}
+.fa-solid {
+    margin-left:95% ;
+    margin-top: 12px;
+}
 
 
