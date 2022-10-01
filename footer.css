@@ -1,0 +1,349 @@
+body {
+    margin: 0%;
+  }
+#b1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1400px;
+    height: 1420px;
+    border: 1px solid black;
+}
+#a{
+    width: 1370px;
+    height: 100px;
+   
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    
+}
+#b{
+    width: 1370px;
+    height: 200px;
+   
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(78, 76, 76);
+    
+}
+#c{
+    width:1370px;
+    height: 50px;
+   
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(85, 83, 83);
+    
+}
+
+#d{
+    width: 1370px;
+    height: 200px;
+   
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+    
+}
+#e{
+    width:1370px;
+    height: 100px;
+   
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color:black;
+    
+}
+#f{
+    width: 1370px;
+    height: 150px;
+    
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(85, 83, 83);
+    
+}
+#g{
+    width:1370px;
+    height: 80px;
+   
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(85, 83, 83);
+    
+}
+#h,#i,#j{
+    width: 1370px;
+    height: 130px;
+  
+    font-style:unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(85, 83, 83);
+    
+}
+.fourteen {
+    display: grid;
+    margin: 50px auto 0px auto;
+    width: 1390px;
+    height: 1000px;
+    grid-template-columns: repeat(29, 1fr);
+   
+
+    gap: 5px 20px;
+
+}
+
+.fourteen>div {
+    display: flex;
+    
+   
+    margin: 5px  1px 0px 5px;
+}
+
+.fourteen>div>img {
+    width: 220px;
+    height: 90px;
+}
+
+#ena{
+    color: limegreen;
+}
+
+.m1 {
+    grid-area: 1/1/2/6;
+
+}
+
+
+.m2 {
+    grid-area: 2/1/3/6;
+}
+
+.m3 {
+    grid-area: 3/1/4/6;
+}
+
+.m4 {
+    grid-area: 4/1/5/6;
+}
+
+.m5 {
+    grid-area: 5/1/6/6;
+}
+
+.m6 {
+    grid-area: 6/1/7/6;
+}
+
+.m7 {
+    grid-area: 7/1/8/6;
+}
+
+.m8 {
+    grid-area: 8/1/9/6;
+}
+
+.m9 {
+    grid-area: 9/1/10/6;
+}
+
+.m10 {
+    grid-area: 10/1/11/6;
+}
+
+.m11 {
+    grid-area: 11/1/12/6;
+}
+
+.m12 {
+    grid-area: 12/1/13/6;
+}
+
+.m13 {
+    grid-area: 1/8/2/13;
+}
+
+.m14 {
+    grid-area: 2/8/3/13;
+}
+
+.m15 {
+    grid-area: 3/8/4/13;
+}
+
+.m16 {
+    grid-area: 4/8/5/13;
+}
+
+.m17 {
+    grid-area: 5/8/6/13;
+}
+
+.m18 {
+    grid-area: 6/8/7/13;
+}
+
+.m19 {
+    grid-area: 1/14/2/20;
+}
+
+.m20 {
+    grid-area: 2/14/4/20;
+}
+
+.m21 {
+    grid-area: 4/14/6/20;
+}
+
+.m22 {
+    grid-area: 1/21/2/29;
+}
+
+.m23 {
+    grid-area: 2/21/4/23;
+}
+
+.m24 {
+    grid-area: 2/23/4/25;
+}
+
+.m25 {
+    grid-area: 2/25/4/27;
+}
+
+.m26 {
+    grid-area: 2/27/4/29;
+}
+
+
+
+
+.fifteen {
+    display: grid;
+    margin: 50px auto 0px auto;
+    width: 1390px;
+    height: 700px;
+    grid-template-columns: repeat(12, 1fr);
+   
+
+    gap: 5px 20px;
+
+}
+
+.fifteen>div {
+    display: flex;
+    color:darkgray;
+    font-style:inherit;
+  
+    margin: 5px  1px 0px 5px;
+}
+
+.fifteen>div>img {
+    width: 120px;
+    height: 50px;
+}
+#meena{
+    color: limegreen;
+}
+
+
+
+.n1 {
+    grid-area: 1/1/2/4;
+
+}
+
+
+.n2 {
+    grid-area: 1/4/2/13;
+}
+
+.n3 {
+    grid-area: 2/1/3/4;
+}
+
+.n4 {
+    grid-area: 2/4/3/13;
+}
+
+.n5 {
+    grid-area: 3/1/5/4;
+}
+
+.n6 {
+    grid-area: 3/4/5/13;
+}
+
+.n7 {
+    grid-area: 5/1/6/4;
+}
+.n8 {
+    grid-area: 5/4/6/5;
+}
+.n9 {
+    grid-area: 5/5/6/6;
+}
+.n10 {
+    grid-area: 5/6/6/7;
+}
+.n11 {
+    grid-area: 5/7/6/8;
+}
+.n12 {
+    grid-area: 5/8/6/9;
+}
+.n13 {
+    grid-area: 5/9/6/10;
+}
+.n14 {
+    grid-area: 5/10/6/11;
+}
+
+.sixteen {
+    display: grid;
+    margin: 50px 0px 0px 0px;
+    width: 1780px;
+    height: 50px;
+    grid-template-columns: repeat(7, 1fr);
+   background-color: rgb(204, 203, 203);
+  
+    gap: 0px 0px;
+
+}
+
+.sixteen>div {
+    display: flex;
+    color:rgb(72, 71, 71);
+    font-style:inherit;
+   
+    margin: 0px  0px 0px 0px;
+}
+
+.o1 {
+    grid-area: 1/2/2/5;
+
+}
+
+
+.o2 {
+    grid-area: 1/7/2/8;
+}
+
+
