@@ -1,0 +1,301 @@
+      #homepage_container{
+        margin-top: 150px;
+      }
+      #container{
+            margin: auto;
+            width: 75%;
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content:space-between;
+            /* align-items: center; */
+        }
+        h1{
+            text-align: center;
+        }
+        #child{
+            margin: auto;
+            /* width: 25%; */
+            display: grid;
+            /* border: 1px solid black; */
+            grid-template-columns: repeat(2,1fr);
+            justify-content: space-between;
+        }
+        #child div{
+            /* border: 1px solid black; */
+            margin: auto;
+            justify-content: space-around;
+            margin: 4px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #div1{
+            /* width: 25%; */
+            /* border: 1px solid black; */
+            justify-content: space-around;
+            margin: 4px;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #container2{
+            width: 75%;
+            margin: auto;
+            display: flex;
+            /* grid-template-columns: repeat(6,1fr); */
+            justify-content: space-between;
+            
+        }
+        #container2 div{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin: 4px;
+        }
+        .image{
+            width: 100%;
+        }
+        #beverages{
+            margin: auto;
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #child2{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        #child2 div{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin: 4px;
+        }
+        #div2{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin: 4px;
+        }
+        #Snaks{
+            margin: auto;
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #Snaks div{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin: 4px;
+        }
+        .image2{
+            width: 100%;
+        }
+        #clean{
+            margin: auto;
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #clean div{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin: 4px;
+        }
+        .image3{
+            width:100%;
+        }
+        #slider{
+            margin: 30px;
+            width: 74%;
+            margin-left: 13%;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        #brand{
+            margin: auto;
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+        }
+        #brand div{
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin: 4px;
+        }
+        .image4{
+            width: 100%;
+        }
+        #last{
+            width: 72%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+            margin-top: 25px;
+            padding: 8px;
+            padding-left: 20px;
+            padding-right: 15px;
+        }
+        p{
+            font-size: 16px;
+        }
+        * {
+            box-sizing: border-box
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            width: 100%;
+            height: 400px;
+            position: relative;
+            margin: auto;
+            /* <--- set to zero, 1em = the inherited font size, which will offset it */
+            /* <--- set to zero, 1em = the inherited font size, which will offset it */
+        }
+        /* Hide the images by default */
+        
+        .mySlides {
+            display: none;
+        }
+        /* Next & previous buttons */
+        
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            margin-top: -22px;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        /* Position the "next button" to the right */
+        
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+        
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Caption text */
+        /* Number text (1/3 etc) */
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+    
+        #Button_Container{
+         margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        }
+        #Button_Container>img{
+            margin-left: 1%;
+        }
+        #Button_Container>img:hover{
+            border: gray solid;
+            border-width: 1px;
+            border-radius: 10%;
+        }
+        
+        #image_Container{
+      margin-top: 1%;
+        display: flex;
+        justify-content: center;
+        }
+        #image_Container>img{
+            margin-left: 1%;
+            width: 19%;
+            height: 19%;
+            border: gray solid;
+            border-width: 1px;
+        }
+    
+        #image_Container>img:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #popular_brand
+        {
+            margin-top: 1%;
+        display: flex;
+        justify-content: center;
+    
+        }
+        #popular_brand>img{
+            margin-left: 1%;
+            width: 19%;
+            height: 19%;
+            border: gray solid;
+            border-width: 1px;
+        }
+        #popular_brand>img:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #Top_Offers{
+        margin-top: 1%;
+        display: flex;
+        justify-content: center;
+        }
+        #Top_Offers>img{
+            margin-left: 1%;
+            width: 19%;
+            height: 19%;
+            border: gray solid;
+            border-width: 1px;
+        }
+        #Top_Offers>img:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #item_div
+        {
+            width: 14%;
+            height: 26%;
+            border: lightgray solid ;
+            border-width: 0.1px;
+            margin-left: 1%;
+           
+        }
+        #item_div:hover{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        #item_div>img{
+            width: 100%;
+        }
+        #item_div>p{
+            margin-left: 8%;
+        }
+        #item_div>button{
+            margin-left: 40%;
+            background-color: orange;
+            margin-bottom: 2%;
+            border: 0px;
+            padding: 0 2% 0 2%;
+            border-radius: 2px;
+    
+         
+        }
+        #item_div>button:hover{
+            background-color: greenyellow;
+        }
