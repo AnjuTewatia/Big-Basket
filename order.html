@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offers</title>
+    <!-- <link rel="stylesheet" href="./footer.css" /> -->
+    <style>
+        /* .container{
+            margin-top: 30%;
+        } */
+        .container {
+            width: 90%;
+            margin: auto;
+            margin-top: 10%;
+        }
+
+        #image img {
+            width: 100%;
+        }
+
+        #image {
+            position: relative;
+            width: 100%;
+        }
+
+        #image button {
+
+            position: absolute;
+            top: 40%;
+
+        }
+
+        #right {
+            margin-left: 99%;
+        }
+
+
+        h1 {
+            margin-left: 40%;
+        }
+
+        #seller {
+            width: 100%;
+            /* border: 2px solid red; */
+            grid-template-columns: repeat(5, 1fr);
+            /* margin-left: 20px; */
+            height: 430px;
+            margin-bottom: 60px;
+        }
+
+        #seller>div {
+            width: 100%;
+            height: 430px;
+            display: flex;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            height: auto;
+        }
+
+        #seller>div>div {
+            width: 100%;
+
+            border: 1px solid grey;
+        }
+
+        #seller>div :hover {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+
+        p {
+            margin-left: 20px;
+            color: grey;
+        }
+
+        #mrp {
+            background-color: rgb(250, 246, 246)
+        }
+
+        /* *************** */
+        #hrs {
+            width: 100%;
+            grid-template-columns: repeat(5, 1fr);
+            height: 430px;
+            margin-bottom: 60px;
+        }
+
+        #hrs>div {
+            width: 100%;
+            height: 430px;
+            display: flex;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            height: auto;
+        }
+        #hrs>div>div{
+           width: 100%;
+
+            border: 1px solid grey;
+
+        }
+        #hrs>div :hover {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        }
+
+
+        h5 {
+            margin-left: 10px;
+
+        }
+
+        h6 {
+            margin-left: 20px;
+            font-size: 15px;
+            text-align: center;
+            background-color: rgb(250, 244, 244);
+
+        }
+
+        .sell {
+            width: 100%
+        }
+        .sell >div:nth-child(1){
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 250px;
+        }
+
+        
+
+        .sell {
+            width: 100%
+        }
+        .sell >div:nth-child(1){
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 250px;
+        }
+        #freq{
+            width: 100%;
+            grid-template-columns: repeat(5, 1fr);
+             margin-left: 20px; 
+             height: 0px;
+            margin-bottom: 60px;
+
+        }
+         
+        #res{
+            width: 100%;
+            height: 430px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            height: auto;
+
+        }
+       #res>div{
+       border: 1px solid grey;
+
+       }
+       #res>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        cursor: pointer;
+       }
+       button{
+        cursor: pointer;
+        
+       }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="image">
+            <button id="right">></button>
+            <button id="left">
+                <</button>
+        </div>
+
+        <!--************************************************************** -->
+        <h1>Best Seller</h1>
+        <hr>
+        <div class="sell"> 
+            <div>
+
+                
+                <button id="rigs"><</button>
+                <button id="left1"> > </button>
+            </div>
+            <div id="seller">
+                 </div>
+        </div>
+        <!-- ***************************************************** -->
+
+        <h1>HDS MIN 60%</h1>
+        <hr>
+        <div class="sell">
+            <div>
+        <button id="rigs"><</button>
+        <button id="left2">></button>
+        </div>
+        <div id="hrs">
+        </div>
+
+    </div>
+
+    <!--********************** -->
+
+    <h1>Frequently Brought items</h1>
+    <hr>
+    <div class="sell">
+        <div>
+            <!-- <button id="right5"><</button>
+            <button id="left5">></button> -->
+        </div>
+        <div id="freq"></div>
+        <div id="res"></div>
+    
+    </div>
+</div>
+
+</body>
+
+</html>
+<script src="main.js">
+
+
+</script>

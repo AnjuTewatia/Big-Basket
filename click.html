@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #home{
+            margin-top: 10%;
+        }
+        #home>p{
+            width: 80%;
+            background-color: rgb(181, 194, 194);
+            text-align: center;
+            margin: auto;
+        }
+        #container{
+            display: flex;
+            width: 90%;
+            height: 400px;
+            grid-template-columns: repeat((3,1fr));
+            gap: 30px;;
+            margin: auto;
+        }
+        #container>div{
+            display: grid;
+            width: 90%;
+            height: 360px;
+            margin: auto;
+
+        }
+       #container >#first{
+            text-align: center;
+        }
+        img{
+            height: 75%;
+        }
+        h5{
+            color: red;
+        }
+        #items{
+            background-color: rgb(219, 159, 138);
+            border: none;
+        }
+        .sell {
+            width: 100%
+        }
+        .sell >div:nth-child(1){
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 250px;
+        }
+
+        
+
+        .sell {
+            width: 100%
+        }
+        .sell >div:nth-child(1){
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 250px;
+        }
+        #freq{
+            width: 90%;
+            height: 400px;
+            grid-template-columns: repeat(5, 1fr);
+             margin-left: 20px; 
+             height: 0px;
+            margin-bottom: 60px;
+
+        }
+         
+        #res{
+            width: 100%;
+             height: 500px;
+            height: auto;
+             
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            /* height: auto; */
+           
+
+        }
+       #res>div{
+        height: 300px;
+       border: 1px solid grey;
+       margin-bottom: 30px;
+
+       }
+       #res>div:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        cursor: pointer;
+       }
+       button{
+        cursor: pointer;
+        /* margin: auto; */
+        
+       }
+
+      
+    </style>
+</head>
+<body>
+    <div id="home">
+    <p>HOME>SNACKS & BRANDED FOODS>NOODLE, PASTA, VERMICELLI>INSTANT NOODLES>MAGGI 2-MINUTE INSTANT MASALA NOODLES  </p>
+</div>
+    <div id="container">
+        <div id="first">
+            <h2>Category</h2>
+            <p>Foodgrains,oil & Masala <br>
+                Dry Fruits <br>
+                Almonds <br>
+                Cashews <br>
+                Pasta & Macaroni <br>
+                Other Dry Fruits
+            </p>
+            <h2>Brands</h2>
+            <p>BB Popular<br>
+                BB Popular Almonds
+            </p>
+        </div>
+        <div>
+            <img src="https://www.bigbasket.com/media/uploads/p/s/10000549_14-bb-popular-almondbadam-californian-giri.jpg" alt="">
+        </div>
+        <div>
+            <h4>BB Popular</h4>
+            <h3>Almond/Badam-Californianm Giri </h3>
+            <h2>price:Rs 433</h2>
+            <h5>you save :28%</h5>
+
+
+            <p>4.2* 84569 Rating</p>
+            <!-- <p>Pack Size</p> -->
+            <input type="text" placeholder="560 g Pouch">
+            <button id="items">Add</button>
+        </div>
+    </div>
+
+    <div class="sell">
+        <div>
+        </div>
+        <div id="freq"></div>
+        <div id="res"></div>
+    
+    </div>
+</body>
+</html>
+<script>
+
+let res =document.getElementById("res")
+// let arr11=JSON.parse(localStorage.getItem("items"))
+let arr11=[]
+
+let item=[
+    {
+        image:"https://www.bigbasket.com/media/uploads/p/s/10000549_14-bb-popular-almondbadam-californian-giri.jpg",
+        name:"Badam",
+        price:"Mrp: Rs 433",
+    },
+    {
+        image:"https://www.bigbasket.com/media/uploads/p/s/40051741_8-emami-healthy-tasty-rice-bran-oil.jpg",
+        name:"Emami",
+       price:"MRP: Rs 147",
+    },
+   
+    {
+        image:"https://www.bigbasket.com/media/uploads/p/s/40058664_10-bb-royal-masoor-dal.jpg",
+        name:"BB Royal",
+        price:"MRP: Rs 30",
+    },
+    {
+        image:"https://www.bigbasket.com/media/uploads/p/s/40154924_6-nescafe-gold-blend-instant-coffee-powder-festive-edition-rich-smooth.jpg",
+        name:"Nescafe Gold",
+        price:"MRP:Rs 807.50",
+    },
+    {
+        image:"https://www.bigbasket.com/media/uploads/p/s/40106415_4-fiama-gel-bathing-bar-celebration-pack-with-5-unique-gel-bars.jpg",
+        name:"Flama",
+        price:295,
+    },
+]
+
+
+
+
+ item.forEach(function(e){
+    let div=document.createElement("div")
+    div.setAttribute("class","card")
+
+    let p_image=document.createElement("img");
+    p_image.src=e.image;
+
+    let p_name=document.createElement("p")
+    p_name.innerHTML=e.name;
+
+    let p_price=document.createElement("h5")
+    p_price.innerHTML=e.price;
+    // console.log("anju")
+    let btn=document.createElement("button")
+    btn.innerText="Add"
+    btn.style.backgroundColor="orange"
+    btn.style.border="none"
+    btn.style.margin="auto"
+
+    
+    let obj={
+        image:e.image,
+        name:e.name,
+        price:e.price
+
+    }
+    
+    btn.addEventListener("click",(e) =>{
+        arr11.push(obj);
+       
+        
+        localStorage.setItem("items",JSON.stringify(arr11))
+        alert("Add to cart successfull")
+    })
+
+    div.append(p_image,p_name,p_price,btn);
+
+    res.append(div);
+    // console.log(div)
+
+ })
+
+
+
+
+ let iitem=[item]
+let k=0;
+let cont= document.getElementById("freq");
+let div=document.getElementById("left5").addEventListener("click",slidingss)
+cont.innerHTML=null;
+// console.log('tewatia');
+cont.append(iitem[k])
+k++;
+if(k==iitem.length){
+    k=0
+}
+
+function slidingss(){
+
+    cont.innerHTML=null;
+    // console.log('at');
+    cont.append(iitem[k])
+    k++;
+    if(k==iitem.length){
+        k=0
+    }
+}
+
+
+
+
+
+
+
+    
+
+    
+</script>
