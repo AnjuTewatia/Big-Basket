@@ -1,0 +1,65 @@
+#food_grains{
+    width: 1000px;
+    margin: auto;
+}
+#food_grains_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    text-align: center;
+}
+#food_grains_container div{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    border: 1px solid green;
+    border-radius: 10px;
+}
+#striked_price{
+    text-decoration: line-through;
+}
+#food_grains_container div button{
+    width: 70px;
+    background-color: rgb(209, 209, 87);
+    padding: 0.5% 2% 0.5% 2%;
+    border: none;
+    border-radius: 3px;
+    margin: auto;
+}
+#below_slider{
+    display: flex;
+    justify-content: space-between;
+}
+#below_slider > p{
+    border: 1px solid green;
+    border-radius: 10px;
+    padding: 0.5% 2% 0.5% 2%;
+}
+#below_slider > p:hover{
+    cursor: pointer;
+}
+#refine{
+    text-decoration: underline;
+    display: flex;
+}
+#refine > img{
+    width: 3%;
+}
+#refine > p{
+    font-size: small;
+}
+#food_grains_container div button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#more_grains{
+    margin: auto;
+    width: 110px;
+    background-color: rgb(209, 209, 87);
+    padding: 0 2% 0 2%;
+    border: none;
+    border-radius: 3px;
+}
+#more_grains:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
