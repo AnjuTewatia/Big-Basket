@@ -2,6 +2,9 @@
      width: 1000px;
      margin: auto;
 }
+#fruits_slider{
+margin-top: 300px;
+}
 #below_slider{
     display: flex;
     justify-content: space-between;
