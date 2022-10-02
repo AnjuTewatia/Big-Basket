@@ -2,6 +2,9 @@
     width: 1000px;
     margin: auto;
 }
+#beverages_slider{
+margin-top: 300px;
+}
 #beverages_container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
