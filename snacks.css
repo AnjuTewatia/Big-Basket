@@ -2,6 +2,9 @@
     width: 1000px;
     margin: auto;
 }
+#snacks_slider{
+    margin-top: 300px;
+}
 #snacks_container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
