@@ -1,5 +1,6 @@
 #navbar_container{
     position: fixed;
+    /* height: 100px; */
     left: 0;
     right: 0;
     top: 0;
@@ -15,7 +16,7 @@
     color: grey;
 }
 #navbar{
-    width: 1500px;
+    width: 100%;
     height: 200px;
     margin: auto;
    display: flex;
@@ -59,22 +60,23 @@
 #search{
     padding-top: 2%;
     padding-bottom: 2%;
-    margin-left: 100%;
-    padding-right: 100%;
-    position: relative;
-    bottom: 60%;
+    /* margin-left: 100%; */
+    padding-right: 70%;
+    /* position: relative; */
+   
+    border: 1px solid grey;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 #offers{
-    position: relative;
-    bottom: 35%;
     text-decoration: none;
-    margin-left: 100%;
+    /* margin-right: 80%; */
+    position: fixed;
+    top: 27%;
+    left:25%;
     color: black;
-    padding-right: 10%;
-    padding-left: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding: 0% 3% 0% 3%;
+   /* border: 1px solid red; */
+
 }
 #offers:hover{
     border-radius: 5px;
@@ -95,4 +97,11 @@
     width: 15%;
     height: 35%;
 }
-
+#cart{
+    text-decoration: none;
+    font-weight: 600;
+}
+#cart:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
