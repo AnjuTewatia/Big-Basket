@@ -16,7 +16,7 @@
         .container {
             width: 90%;
             margin: auto;
-            margin-top: 10%;
+            margin-top: 300px;
         }
 
         #image img {
@@ -192,14 +192,16 @@
     <div id="navbar">
         <div id="big_b">
             <img src="https://yespunjab.com/wp-content/uploads/2020/11/BigBasket-Logo.jpg" alt="error">
-            <select name="SHOP BY CATEGORIES" id="select">
-                <option value="">SHOP BY CATEGORY</option>
-                <option><a href="./bakery.html">Bakery, Cakes & Dairy</a></option>
-                <option><a href="./fruits_category.html">Fruits & Vegetables</a></option>
-                <option><a href="./foodgrains.html">Food Grains, Oil & Masala</a></option>
-                <option><a href="./snacks.html">Snacks & Branded Foods</a></option>
-                <option><a href="./beauty.html">Beauty & Hygiene</a></option>
-                <option><a href="./beverages.html">Beverages</a></option>
+                         <select name="SHOP BY CATEGORIES" id="select" onchange="location = this.value">
+                    <option value="">SHOP BY CATEGORY</option>
+                    <option value="./bakery.html">Bakery, Cakes & Dairy</option>
+                    <option value="./beauty.html">Beauty & Hygiene</option>
+                    <option value="./beverages.html">Beverages</option>
+                    <option value="./foodgrains.html">FoodGrains,Oil & Masala</option>
+                    <option value="./fuits_category.html">Fruits & Vegetables</option>
+                    <option value="./snacks.html">Snacks & Branded Foods</option>
+                    </select>
+
         </div>
         <div id="search_bar">
             
