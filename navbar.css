@@ -100,6 +100,7 @@
 #cart{
     text-decoration: none;
     font-weight: 600;
+    margin-top: 10%;
 }
 #cart:hover{
     cursor: pointer;
