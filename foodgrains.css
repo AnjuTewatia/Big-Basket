@@ -2,6 +2,9 @@
     width: 1000px;
     margin: auto;
 }
+#food_grains_slider{
+margin-top: 300px;
+}
 #food_grains_container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
